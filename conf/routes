@@ -3,6 +3,7 @@
 # ~~~~
 
 # Home page
+GET  	/assets/*file        		 controllers.Assets.at(path="/public", file)
 GET     /item                   	 controllers.Application.lookup(route = "item", id: Option[String])
 GET     /user                   	 controllers.Application.lookup(route = "user", id: Option[String])
 GET     /submitted                   controllers.Application.lookup(route = "submitted", id: Option[String])
